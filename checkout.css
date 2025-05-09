@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.checkout-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    gap: 30px;
+}
+
+.checkout-form {
+    flex: 2;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.order-summary {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Added to prevent overflow */
+    margin-bottom: 10px; /* Added spacing between inputs */
+}
+
+.checkbox-group {
+    margin: 15px 0;
+    display: flex;
+    align-items: center; /* Align checkbox and label vertically */
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+    width: auto; /* Remove fixed width */
+}
+
+.checkbox-group label {
+    margin-bottom: 0; /* Remove bottom margin for inline display */
+    font-weight: normal; /* Make checkbox labels less bold */
+    display: inline; /* Display label inline with checkbox */
+}
+
+.payment-methods {
+    margin-top: 20px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.payment-method input {
+    margin-right: 15px;
+}
+
+.payment-method img {
+    height: 30px;
+    margin-left: auto;
+}
+
+.btn-pay {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-pay:hover {
+    background-color: #333;
+}
+
+.order-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.order-item-details {
+    flex: 1;
+}
+
+.order-item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.order-item-price {
+    color: #666;
+}
+
+.order-total {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 18px;
+}
+
+/* Add this new rule for the subtotal row */
+.order-total div:first-child {
+    margin-bottom: 10px; /* Adjust this value as needed */
+}
+
+.order-total > div:last-child {
+    font-weight: bold; /* Only make the total row bold */
+    margin-bottom: 0; /* Remove bottom margin for last item */
+}
+
+.secure-payment {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.secure-payment img {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    
+    /* Ensure inputs don't overflow on mobile */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+CREATE DATABASE login_register_dollarsign
+
+CREATE TABLE users (
+    ID INT(11) NOT NULL AUTO_INCREMENT,
+    Last_Name VARCHAR(50) NOT NULL,
+    First_Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    token VARCHAR(100) DEFAULT NULL,
+    is_active TINYINT(1) DEFAULT 0,
+    PRIMARY KEY (ID)
+);

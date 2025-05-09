@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Nutty Noises';
+    src: url('fonts/nutty-noises-font.woff2') format('woff2'),
+         url('fonts/nutty-noises-font.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111111;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgb(216, 216, 216);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.brand-name {
+    font-family: 'Nutty Noises';
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #111;
+}
+
+.form-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: border-color 0.3s;
+    background-color: #f9f9f9;
+}
+
+.form-control:focus {
+    border-color: #555;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(85, 85, 85, 0.2);
+}
+
+/* Button Styles */
+.btn-login, .btn-register {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    letter-spacing: 1px;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #333;
+}
+
+/* Link Styles */
+a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-danger {
+    background-color: #fff0f0;
+    border-left: 4px solid #e74c3c;
+    color: #c0392b;
+}
+
+.email-notice {
+    background-color: #f0f7ff;
+    border-left: 4px solid #3498db;
+    color: #2980b9;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    .form-title {
+        font-size: 20px;
+    }
+}
+
+/* Body specific styles */
+.body-register {
+    background-color: #111111;
+}
+
+.form-btn {
+    margin-top: 25px;
+}
+
+/* Text alignment for the login and registration links */
+.container > div:last-child {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
